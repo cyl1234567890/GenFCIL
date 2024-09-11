@@ -1,20 +1,11 @@
-# Official Pytorch Implementation for GLFC
+#General Federated Class-Incremental Learning With Lightweight Generative Replay
 
-## [[CVPR-2022] Federated Class-Incremental Learning](https://openaccess.thecvf.com/content/CVPR2022/html/Dong_Federated_Class-Incremental_Learning_CVPR_2022_paper.html)
-
-This is the official implementation code of our paper "**Federated Class-Incremental Learning**" accepted by [CVPR-2022](https://cvpr2022.thecvf.com/). 
-
-You can also find the arXiv version with supplementary material at [here](https://arxiv.org/abs/2203.11473).
-
-
-## Framework:
-
-![overview](./fig/overview.png)
+This is the official implementation code of our paper "**General Federated Class-Incremental Learning With Lightweight Generative Replay" accepted by [IEEE Internet of Things Journal](https://ieeexplore.ieee.org/document/10612802). 
 
 
 ## Prerequisites:
 
-* python == 3.6
+* python == 3.7
 
 * torch == 1.2.0
 
@@ -24,8 +15,6 @@ You can also find the arXiv version with supplementary material at [here](https:
 
 * torchvision == 0.4.0
 
-* cv2
-
 * scipy == 1.5.2
 
 * sklearn == 0.24.1
@@ -33,51 +22,37 @@ You can also find the arXiv version with supplementary material at [here](https:
 
 ## Datasets:
 
-* **CIFAR100:** You don't need to do anything before running the experiments on [CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html) dataset.
-
-* **Imagenet-Subset (Mini-Imagenet):** Please manually download the on [Imagenet-Subset (Mini-Imagenet)](https://github.com/yaoyao-liu/mini-imagenet-tools) dataset from the official websites, and place it in './train'.
-
-* **Tiny-Imagenet:** Please manually download the on [Tiny-Imagenet](https://github.com/seshuad/IMagenet) dataset from the official websites, and place it in './tiny-imagenet-200'.
+* **CIFAR100** 
+* **CIFAR10** 
+* **MNIST**
+* **SVHN**
 
 
 
 ## Training:
-
-* Please check the detailed arguments in './src/option.py'.
-
 ```shell
 python fl_main.py
 ```
-
-
-## Performance:
-
-* **Experiments on CIFAR100 dataset**
-
-![cifar](./fig/imagenet_subset_result.png)
-
-* **Experiments on Imagenet-Subset (Mini-Imagenet) dataset**
-
-![imagenet-subset](./fig/cifar_result.png)
-
 
 ## Citation:
 
 If you find this code is useful to your research, please consider to cite our paper.
 
 ```
-@InProceedings{dong2022federated,
-    author = {Dong, Jiahua and Wang, Lixu and Fang, Zhen and Sun, Gan and Xu, Shichao and Wang, Xiao and Zhu, Qi},
-    title = {Federated Class-Incremental Learning},
-    booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month = {June},
-    year = {2022},
-}
+@ARTICLE{10612802,
+  author={Chen, Yuanlu and Tan, Alysa Ziying and Feng, Siwei and Yu, Han and Deng, Tao and Zhao, Libang and Wu, Feng},
+  journal={IEEE Internet of Things Journal}, 
+  title={General Federated Class-Incremental Learning With Lightweight Generative Replay}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/JIOT.2024.3434600}}
 ```
 
 ## Contact:
 
-* **Lixu Wang:**  lixuwang2025@u.northwestern.edu
-* **Jiahua Dong:** dongjiahua@sia.cn
+* **Yuanlu Chen:**  20225227102@stu.suda.edu.cn 
+* **Siwei Feng:** swfeng@suda.edu.cn
 
 
